@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rob van Bakel - Web Development Portfolio</title>
+  <link rel="stylesheet" href="./styles/main.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+    integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+
+  <script defer src="./index.js"></script>
+
+</head>
+
+<body>
+
+  <header class="home">
+    <div class="container">
+      <a href="/"><img src="./assets/logo.svg" alt="Logo Rob van Bakel"></a>
+      <span>Web Development Portfolio</span>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="container">
+      <div class="text">
+        <h2>Welcome!</h2>
+        <p>For as long as I can remember, web development has been a passion of mine. I realized I enjoy the process of
+          working on the smallest details that the average user would never notice. Finishing up those last 2%&nbsp;of a
+          website fascinated me and I grew to become more curious about how different components of a website functioned
+          and worked together.</p>
+
+        <p>I've always been interested in data structures and the organization thereof, so I wanted to find ways to
+          combine that with my enthusiasm for web development. I started to explore what happens behind the scenes of
+          websites that I visited. I dived deeper into JavaScript, taught myself Node.js and how to handle servers and
+          databases.</p>
+
+        <p>Meanwhile, I've been continuing to focus on the user experience. Is the page's goal clear? Is it accessible?
+          Would a user know where or what to do next? If at any point during the process, the answer to any of these
+          questions is 'no', the idea is going back to the drawing board before I'd work out something that headed in
+          the wrong direction from the start.</p>
+
+        <p>This balance between my passion for the structures that make up the internet and designing for a great user
+          experience is what inspired me to build the projects in this portfolio. Feel free to leave any feedback; the
+          more critical, the better! If you have another question, idea or you just want to say hi, <a
+            href="#contact">please let me know</a>! </p>
+
+      </div>
+      <div class="skills desktop">
+        <div id="skillsJson">
+          <div id="top-bar">
+            <img src="./assets/controls.svg" alt="">
+            <div id="title">skills.json</div>
+          </div>
+          <div id="main">
+            <div class="tab0">[</div>
+            <div class="tab1">{</div>
+            <div class="tab2"><span class="attribute">"skills"</span>: [</div>
+            <div class="tab3"><span class="item">"HTML"</span>,<br> <span class="item">"(S)CSS"</span>,<br> <span
+                class="item">"WordPress"</span>,<br> <span class="item">"JavaScript"</span>,<br> <span
+                class="item">"Node.js"</span>,<br> <span class="item">"Vue.js"</span></div>
+            <div class="tab2">]</div>
+            <div class="tab1">},</div>
+            <div class="tab1">{</div>
+            <div class="tab2"><span class="attribute">"nowLearning"</span>: [</div>
+            <div class="tab3"><span class="item">"Nuxt.js"</span>,<br> <span class="item">"TypeScript"</span></div>
+            <div class="tab2">]</div>
+            <div class="tab1">}</div>
+            <div class="tab0">]</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <div class="container">
+
+      <div class="project">
+        <div class="project-image desktop">
+          <a href="./gotiny">
+            <img src="./assets/show_gotiny.png" alt="GoTiny Screenshot">
+          </a>
+        </div>
+        <div class="project-title">
+          <h1>
+            <a href="./gotiny">
+              GoTiny
+            </a>
+          </h1>
+          <ul class="chips">
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>Vue.js</li>
+            <li>MongoDB</li>
+          </ul>
+          <div class="project-image mobile">
+            <a href="./gotiny">
+              <img src="./assets/show_gotiny.png" alt="GoTiny Screenshot">
+            </a>
+          </div>
+          <p class="lead">GoTiny provides a no-nonsense way to generate short links. The website enables the user to
+            transform any long url to a short and easily sharable link, with just one click. Speed and ease of use are
+            GoTiny's core values and that's noticable for bot the end user as well as developers. </p>
+          <div class="links">
+            <div class="github-link">
+              <a target="_blank" href="https://github.com/robvanbakel/gotiny-api">
+                <i class="fab fa-github"></i>
+                <div>view on GitHub</div>
+              </a>
+            </div>
+            <a class="project-link" href="./gotiny">learn more</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-title">
+          <h1>
+            <a href="./scheduler">
+              Scheduler
+            </a>
+          </h1>
+          <ul class="chips">
+            <li>Node.js</li>
+            <li>Slack API</li>
+            <li>Express</li>
+            <li>Vue.js</li>
+          </ul>
+          <div class="project-image mobile">
+            <a href="./scheduler">
+              <img src="./assets/show_scheduler.png" alt="Scheduler Screenshot">
+            </a>
+          </div>
+          <p class="lead">At a former employer, our work schedule was created per week. Every employee got their weekly
+            schedule sent by them via a Slack message by the Planning department. This system worked, but was prone to
+            user error as shift time scould vary greatly from day to day without any option to automatically import your
+            work schedule into your phone's calendar. To simplify the lives of my colleagues and myself, I set out to
+            solve this problem.</p>
+          <div class="links">
+            <div class="github-link">
+              <a target="_blank" href="https://github.com/robvanbakel/scheduler-slack-bot">
+                <i class="fab fa-github"></i>
+                <div>view on GitHub</div>
+              </a>
+            </div>
+            <a class="project-link" href="./scheduler">learn more</a>
+          </div>
+        </div>
+        <div class="project-image desktop">
+          <a href="./scheduler">
+            <img src="./assets/show_scheduler.png" alt="Scheduler Screenshot">
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <h1 class="desktop">Contact Me</h1>
+      <h1 class="mobile">Contact</h1>
+      <div class="footer-content">
+        <div class="card">
+          <h2>Rob van Bakel</h2>
+          <p>Would you like to collaborate? Contact me via mail, WhatsApp or the contact form!</p>
+          <div class="contact"><i class="fas fa-phone-alt"></i>(06) 23 06 21 09</div>
+          <div class="contact"><i class="fas fa-envelope"></i><a
+              href="mailto:info@robvanbakel.com">info@robvanbakel.com</a></div>
+        </div>
+        <div class="success hidden">Thanks for your message!</div>
+        <div class="form">
+          <form method="post" id="contact" action="/contact">
+            <div class="form-block" id="name">
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name">
+            </div>
+            <div class="form-block" id="email">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" required>
+            </div>
+            <div class="form-block" id="message">
+              <label for="message">Message</label>
+              <textarea name="message" id="message" required></textarea>
+            </div>
+            <div class="button-wrapper">
+              <button type="submit">send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
