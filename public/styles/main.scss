@@ -109,7 +109,14 @@ a {
   transition: color 120ms ease;
   cursor: pointer;
   &:hover {
-    color: darken($color-accent, 5%);
+    color: darken($color-accent, 6%);
+  }
+}
+
+p a {
+  color: darken($color-accent, 10%);
+  &:hover {
+    color: darken($color-accent, 20%);
   }
 }
 

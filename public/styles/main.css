@@ -74,7 +74,14 @@ a {
   cursor: pointer;
 }
 a:hover {
-  color: #1e71ed;
+  color: #1a6eed;
+}
+
+p a {
+  color: #1264e0;
+}
+p a:hover {
+  color: #0e4fb1;
 }
 
 @media (max-width: 840px) {
