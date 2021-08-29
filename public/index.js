@@ -1,17 +1,3 @@
-// Header alt
-
-// const showcase = document.querySelector('.showcase');
-
-// window.addEventListener('scroll', () => {
-
-//   const scroll = window.scrollY;
-//   const viewport = window.innerHeight + 20;
-//   const showcaseHeight = showcase.offsetHeight;
-
-//   showcase.style.transform = `translate(0,${-scroll / (viewport / (showcaseHeight - viewport))}px)`
-
-// });
-
 const portfolioImages = document.querySelectorAll('.project-image.desktop img');
 
 portfolioImages.forEach(image => {
