@@ -481,7 +481,7 @@ header.project {
           opacity: 0.8;
           transition: opacity 120ms ease;
           &:hover,
-          &.active {
+          &.router-link-active {
             opacity: 0.35;
           }
         }

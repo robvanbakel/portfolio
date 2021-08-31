@@ -1,0 +1,68 @@
+{
+  "title": "Rob van Bakel - Web Development Portfolio",
+  "structure": {
+    "viewOnGitHub": "bekijk op GitHub",
+    "learnMore": "lees meer",
+    "goToLiveSite": "bekijk live site",
+    "aboutThisProject": "Over dit project",
+    "techStack": "Tech Stack"
+  },
+  "projects": [
+    {
+      "name": "GoTiny",
+      "images": {
+        "showcase": "show_gotiny.png",
+        "hero": "gotiny_hero.png"
+      },
+      "links": {
+        "GitHub": "https://github.com/robvanbakel/gotiny-api",
+        "live": "https://gotiny.cc"
+      },
+      "text": {
+        "lead": "De makkelijkste manier om korte links te maken. Snel, veilig en voor iedereen.",
+        "intro": "GoTiny is een no-nonsense manier om korte links te maken. De website stelt iedere bezoeker in staat om een lange url met één klik om te toveren in een makkelijk deelbare link. Snelheid en privacy zijn de belangrijkste pijlers van GoTiny en dat is voelbaar vanaf het eerste moment."
+      },
+      "techStack": {
+        "JavaScript Runtime": "Node.js",
+        "Frontend Framework": "Vue.js",
+        "Web Framework": "Express",
+        "Database": "MongoDB"
+      }
+    },
+    {
+      "name": "Scheduler",
+      "images": {
+        "showcase": "show_scheduler.png",
+        "hero": "scheduler_hero.jpg"
+      },
+      "links": {
+        "GitHub": "https://github.com/robvanbakel/scheduler-slack-bot",
+        "live": "https://avsr.nl"
+      },
+      "text": {
+        "lead": "Laat werknemers hun werkrooster in hun agenda zetten. Snel en pijnloos.",
+        "intro": "Bij een vorige werkgever werd ons rooster per week gemaakt. Dit werkrooster werd naar ons gestuurd in een Slack bericht van de werkgever. Dit systeem werkte, maar omdat de werktijden van dag tot dag erg konden variëren, ontstonden er snel fouten wanneer je je werkrooster in je agenda wilde zetten. Om het leven van mijn collega's en mezelf iets makkelijk te maken, wilde ik dit probleem oplossen."
+      },
+      "techStack": {
+        "JavaScript Runtime": "Node.js",
+        "Used API": "Slack API",
+        "Web Framework": "Express",
+        "Frontend Framework": "Vue.js"
+      }
+    }
+  ],
+  "footer": {
+    "title": "Neem contact op",
+    "titleMobile": "Contact",
+    "intro": "Lijkt het je leuk om samen te werken? Neem dan contact op via WhatsApp, mail of het contactformulier!",
+    "phone": "(06) 23 06 21 09",
+    "email": "info@robvanbakel.nl",
+    "thankYouMessage": "Bedankt voor je bericht!",
+    "form": {
+      "name": "Naam",
+      "email": "E-mail",
+      "message": "Bericht",
+      "send": "stuur"
+    }
+  }
+}
