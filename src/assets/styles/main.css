@@ -384,6 +384,9 @@ section#portfolio .container .project .project-title ul.chips li {
   background: #c4c4c4;
   color: #fff;
 }
+section#portfolio .container .project:nth-child(2n) .project-image.desktop {
+  order: 1;
+}
 
 /*
 *

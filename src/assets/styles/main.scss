@@ -278,44 +278,6 @@ header.home {
   }
 }
 
-// Header alt
-
-// header.home {
-//   background: linear-gradient(180deg, #2f2f2f 0%, #181818 100%);
-//   height: 100vh;
-//   font-family: $font-primary;
-//   color: $color-light;
-//   overflow: hidden;
-//   .container {
-//     @include grid("1-1");
-//     height: 100%;
-//     .title {
-//       display: flex;
-//       flex-direction: column;
-//       justify-content: center;
-//       height: 100vh;
-//       img {
-//         width: 85%;
-//         margin: gap(2) 0 gap(4);
-//       }
-//       span {
-//         font-weight: 300;
-//         font-size: 36px;
-//         opacity: 0.8;
-//       }
-//     }
-//     .showcase-wrapper {
-//       .showcase {
-//         margin-top: 20px;
-//         img {
-//           width: 100%;
-//           margin-bottom: 20px;
-//         }
-//       }
-//     }
-//   }
-// }
-
 section#about {
   padding: gap(12) 0;
   @media (max-width: $breakpoint) {
@@ -442,6 +404,11 @@ section#portfolio {
         ul.chips li {
           background: #c4c4c4;
           color: #fff;
+        }
+      }
+      &:nth-child(2n) {
+        .project-image.desktop {
+          order: 1
         }
       }
     }

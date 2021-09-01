@@ -69,79 +69,7 @@
 
   <section id="portfolio">
     <div class="container">
-      <div class="project">
-        <div class="project-image desktop">
-          <router-link :to="{ name: meta.projects[0].name }">
-            <img :src="`/images/${meta.projects[0].images.showcase}`" :alt="`${meta.projects[0].name} Screenshot`" />
-          </router-link>
-        </div>
-        <div class="project-title">
-          <h1>
-            <router-link :to="{ name: meta.projects[0].name }">
-              {{ meta.projects[0].name }}
-            </router-link>
-          </h1>
-          <ul class="chips">
-            <li v-for="(component, index) in Object.values(meta.projects[0].techStack)" :key="index">
-              {{ component }}
-            </li>
-          </ul>
-          <div class="project-image mobile">
-            <router-link :to="{ name: meta.projects[0].name }">
-              <img :src="`/images/${meta.projects[0].images.showcase}`" :alt="`${meta.projects[0].name} Screenshot`" />
-            </router-link>
-          </div>
-          <p class="lead">
-            {{ meta.projects[0].text.intro }}
-          </p>
-          <div class="links" @mouseleave="setGitHubActive($event, false)">
-            <div class="github-link" @mouseenter="setGitHubActive($event, true)">
-              <a target="_blank" :href="meta.projects[0].links.GitHub">
-                <i class="fab fa-github"></i>
-                <div>{{ meta.structure.viewOnGitHub }}</div>
-              </a>
-            </div>
-            <router-link class="project-link" :to="{ name: meta.projects[0].name }">{{ meta.structure.learnMore }}</router-link>
-          </div>
-        </div>
-      </div>
-
-      <div class="project">
-        <div class="project-title">
-          <h1>
-            <router-link :to="{ name: meta.projects[1].name }">
-              {{ meta.projects[1].name }}
-            </router-link>
-          </h1>
-          <ul class="chips">
-            <li v-for="(component, index) in Object.values(meta.projects[1].techStack)" :key="index">
-              {{ component }}
-            </li>
-          </ul>
-          <div class="project-image mobile">
-            <router-link :to="{ name: meta.projects[1].name }">
-              <img :src="`/images/${meta.projects[1].images.showcase}`" :alt="`${meta.projects[1].name} Screenshot`" />
-            </router-link>
-          </div>
-          <p class="lead">
-            {{ meta.projects[1].text.intro }}
-          </p>
-          <div class="links" @mouseleave="setGitHubActive($event, false)">
-            <div class="github-link" @mouseenter="setGitHubActive($event, true)">
-              <a target="_blank" :href="meta.projects[1].links.GitHub">
-                <i class="fab fa-github"></i>
-                <div>{{ meta.structure.viewOnGitHub }}</div>
-              </a>
-            </div>
-            <router-link class="project-link" :to="{ name: meta.projects[1].name }">{{ meta.structure.learnMore }}</router-link>
-          </div>
-        </div>
-        <div class="project-image desktop">
-          <router-link :to="{ name: meta.projects[1].name }">
-            <img :src="`/images/${meta.projects[1].images.showcase}`" :alt="`${meta.projects[1].name} Screenshot`" />
-          </router-link>
-        </div>
-      </div>
+      <ProjectShowcase v-for="(project, index) in meta.projects" :key="index" :project="project" />
     </div>
   </section>
   <Footer />
@@ -149,25 +77,17 @@
 
 <script>
 import SkillsJson from "@/components/ui/SkillsJson"
+import ProjectShowcase from "@/components/layout/ProjectShowcase"
 import Footer from "@/components/layout/Footer"
 
 export default {
-  components: { Footer, SkillsJson },
+  components: { Footer, SkillsJson, ProjectShowcase },
   computed: {
     lang() {
       return this.$store.getters["lang"]
     },
     meta() {
       return this.$store.getters["meta"]
-    },
-  },
-  methods: {
-    setGitHubActive(e, payload) {
-      if (payload) {
-        e.target.classList.add("expanded")
-      } else {
-        e.target.firstChild.classList.remove("expanded")
-      }
     },
   },
 }
