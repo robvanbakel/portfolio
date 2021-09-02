@@ -19,14 +19,31 @@ const router = createRouter({
       path: "/gotiny",
       component: GoTiny,
       name: "GoTiny",
+      meta: {
+        title: "GoTiny",
+      },
     },
     {
       path: "/scheduler",
       component: Scheduler,
       name: "Scheduler",
+      meta: {
+        title: "Scheduler",
+      },
     },
   ],
+})
 
+router.beforeEach((to, from, next) => {
+  let title = "Rob van Bakel - Web Development Portfolio"
+
+  if (to.meta.title) {
+    title = `${to.meta.title} | ${title}`
+  }
+
+  document.title = title
+
+  next()
 })
 
 export default router
