@@ -412,18 +412,12 @@ header.project nav ul {
 header.project nav ul li {
   padding: 0 30px;
 }
-header.project nav ul li:last-child a {
-  opacity: 0.8;
-}
-header.project nav ul li:last-child a:hover {
-  opacity: 1;
-}
 header.project nav ul li a {
   color: inherit;
   opacity: 0.8;
   transition: opacity 120ms ease;
 }
-header.project nav ul li a:hover, header.project nav ul li a.router-link-active {
+header.project nav ul li a:hover, header.project nav ul li a.router-link-active:not(header.project nav ul li a.contact) {
   opacity: 0.35;
 }
 header.project .header {

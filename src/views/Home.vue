@@ -31,7 +31,7 @@
         <p>
           Deze balans tussen mijn passie voor de systemen waar het internet op draait en het nadenken over de ervaring van de eindgebruiker is wat me heeft
           geïnspireerd tot de projecten in dit portfolio. Voel je vrij om je feedback achter te laten; hoe kritischer, hoe beter! Heb je een andere vraag, idee
-          of opmerking? <a href="#contact">Laat het me dan weten</a>!
+          of opmerking? <router-link to="#contact">laat het me dan weten</router-link>!
         </p>
       </div>
       <div class="text" v-else>
@@ -57,8 +57,7 @@
         <p>
           This balance between my passion for the structures that make up the internet and designing for a great user experience is what inspired me to build
           the projects in this portfolio. Feel free to leave any feedback; the more critical, the better! If you have another question, idea or you just want to
-          say hi,
-          <a href="#contact">please let me know</a>!
+          say hi, <router-link to="#contact">please let me know</router-link>!
         </p>
       </div>
       <div class="skills desktop">

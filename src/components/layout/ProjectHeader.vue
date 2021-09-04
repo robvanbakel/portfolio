@@ -11,7 +11,9 @@
               {{ project.name }}
             </router-link>
           </li>
-          <li><a href="#contact">Contact</a></li>
+          <li>
+            <router-link class="contact" to="#contact">Contact</router-link>
+          </li>
         </ul>
       </nav>
       <div class="header">

@@ -437,18 +437,12 @@ header.project {
       display: flex;
       li {
         padding: 0 gap(2);
-        &:last-child a {
-          opacity: 0.8;
-          &:hover {
-            opacity: 1;
-          }
-        }
         a {
           color: inherit;
           opacity: 0.8;
           transition: opacity 120ms ease;
           &:hover,
-          &.router-link-active {
+          &.router-link-active:not(&.contact) {
             opacity: 0.35;
           }
         }
