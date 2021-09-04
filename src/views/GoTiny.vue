@@ -87,7 +87,7 @@
           <p>
             Despite gotiny.cc being an easy way to create short links, the core of generating tiny links quickly and easily is the API behind it. Because I
             wanted to make the functionality accessible to other developers so they can implement it in their projects as well, I created the
-            <a href="https://github.com/robvanbakel/gotiny-sdk">GoTiny SDK</a>.
+            <a href="https://github.com/robvanbakel/gotiny-sdk" target="_blank">GoTiny SDK</a>.
           </p>
 
           <p>
