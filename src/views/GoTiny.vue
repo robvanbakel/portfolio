@@ -33,8 +33,8 @@
           </p>
 
           <p>
-            The user interface doesn't refresh after submitting the form on the website, so the user doesn't have to wait for another page loading. The API runs
-            on the same server, so the screen simply changes to output the short link.
+            The user interface doesn't refresh after submitting the form on the website, so the user doesn't have to wait for another page loading. The website simply
+            changes to a show a screen where it's immediately clear to the user what the short link is.
           </p>
         </div>
       </div>

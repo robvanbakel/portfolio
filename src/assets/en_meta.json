@@ -20,7 +20,7 @@
       },
       "text": {
         "lead": "The easiest way to generate short links. Quick, safe en accessible.",
-        "intro": "GoTiny provides a no-nonsense way to generate short links. The website enables the user to transform any long url to a short and easily sharable link, with just one click. Speed and ease of use are GoTiny's core values and that's noticable for bot the end user as well as developers."
+        "intro": "GoTiny provides a no-nonsense way to generate short links. The website enables the user to transform any long url to a short and easily shareable link, with just one click. Speed and ease of use are GoTiny's core values and that's noticeable for both the end user as well as developers."
       },
       "techStack": {
         "JavaScript Runtime": "Node.js",
