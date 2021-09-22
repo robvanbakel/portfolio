@@ -64,10 +64,12 @@ body {
 
 .container {
   max-width: 1200px;
-  padding: 0 gap(2);
+  padding-left: max(30px, env(safe-area-inset-left));
+  padding-right: max(30px, env(safe-area-inset-right));
   margin: 0 auto;
   @media (max-width: $breakpoint) {
-    padding: 0 gap(1);
+    padding-left: max(15px, env(safe-area-inset-left));
+    padding-right: max(15px, env(safe-area-inset-right));
   }
 }
 
@@ -408,7 +410,7 @@ section#portfolio {
       }
       &:nth-child(2n) {
         .project-image.desktop {
-          order: 1
+          order: 1;
         }
       }
     }

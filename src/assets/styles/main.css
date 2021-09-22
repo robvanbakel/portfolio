@@ -26,12 +26,14 @@ body {
 
 .container {
   max-width: 1200px;
-  padding: 0 30px;
+  padding-left: max(30px, env(safe-area-inset-left));
+  padding-right: max(30px, env(safe-area-inset-right));
   margin: 0 auto;
 }
 @media (max-width: 840px) {
   .container {
-    padding: 0 15px;
+    padding-left: max(15px, env(safe-area-inset-left));
+    padding-right: max(15px, env(safe-area-inset-right));
   }
 }
 
