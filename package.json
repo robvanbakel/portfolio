@@ -6,6 +6,19 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robvanbakel/portfolio.git"
+  },
+  "author": {
+    "name": "Rob van Bakel",
+    "email": "robbakel@gmail.com",
+    "url": "https://robvanbakel.com"
+  },
+  "bugs": {
+    "url": "https://github.com/robvanbakel/portfolio/issues"
+  },
+  "homepage": "https://github.com/robvanbakel/portfolio#readme",
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^3.0.0",
