@@ -11,6 +11,7 @@
           <div class="contact">
             <i class="fas fa-envelope"></i><a :href="`mailto:${meta.footer.email}`">{{ meta.footer.email }}</a>
           </div>
+          <div class="contact"><a href="https://github.com/robvanbakel" target="_blank"><i class="fab fa-github"></i>github.com/robvanbakel</a></div>
         </div>
         <div class="success" v-if="showThankYou">
           {{ meta.footer.thankYouMessage }}
