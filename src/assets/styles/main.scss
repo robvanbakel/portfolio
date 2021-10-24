@@ -549,6 +549,22 @@ section#hero {
     width: 100%;
     box-shadow: $shadow;
   }
+  &.two-images {
+    .container {
+      display: flex;
+      justify-content: space-between;
+      .img-wrapper {
+        &:nth-child(2) {
+          display: flex;
+          justify-content: flex-end;
+          margin-top: 25%;
+        }
+        img {
+          width: 175%;
+        }
+      }
+    }
+  }
 }
 
 section#features {

@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from "vue-router"
 import Home from "@/views/Home"
 import GoTiny from "@/views/GoTiny"
 import Scheduler from "@/views/Scheduler"
+import Spark from "@/views/Spark"
 
 const router = createRouter({
   history: createWebHistory(),
@@ -33,6 +34,14 @@ const router = createRouter({
       name: "Scheduler",
       meta: {
         title: "Scheduler",
+      },
+    },
+    {
+      path: "/spark",
+      component: Spark,
+      name: "Spark",
+      meta: {
+        title: "Spark",
       },
     },
   ],

@@ -534,6 +534,18 @@ section#hero img {
   width: 100%;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
 }
+section#hero.two-images .container {
+  display: flex;
+  justify-content: space-between;
+}
+section#hero.two-images .container .img-wrapper:nth-child(2) {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 25%;
+}
+section#hero.two-images .container .img-wrapper img {
+  width: 175%;
+}
 
 section#features {
   padding: 180px 0;

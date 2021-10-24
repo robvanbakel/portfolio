@@ -49,6 +49,27 @@
         "Web Framework": "Express",
         "Frontend Framework": "Vue.js"
       }
+    },
+    {
+      "name": "Spark",
+      "images": {
+        "showcase": "show_spark.png",
+        "hero": "spark_planner.png"
+      },
+      "links": {
+        "GitHub": "https://github.com/robvanbakel/spark",
+        "live": "https://demo.sparkscheduler.com"
+      },
+      "text": {
+        "lead": "Easily manage your employees and publish work schedules.",
+        "intro": "Spark aims to make it easy for employers to manage their staff, as well as create and share work schedules with their employees. Weekly schedules can be made in the app, which are then being pushed to a calendar feed that employees can subscribe to."
+      },
+      "techStack": {
+        "JavaScript Runtime": "Node.js",
+        "Frontend Framework": "Vue.js",
+        "Authentication": "Firebase",
+        "Database": "Cloud Firestore"
+      }
     }
   ],
   "footer": {

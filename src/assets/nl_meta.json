@@ -45,9 +45,30 @@
       },
       "techStack": {
         "JavaScript Runtime": "Node.js",
-        "Used API": "Slack API",
+        "Gebruikte API": "Slack API",
         "Web Framework": "Express",
         "Frontend Framework": "Vue.js"
+      }
+    },
+    {
+      "name": "Spark",
+      "images": {
+        "showcase": "show_spark.png",
+        "hero": "spark_planner.png"
+      },
+      "links": {
+        "GitHub": "https://github.com/robvanbakel/spark",
+        "live": "https://demo.sparkscheduler.com"
+      },
+      "text": {
+        "lead": "Beheer je personeelsbestand en maak, bewerk en publiceer werkroosters.",
+        "intro": "Spark maakt het makkelijk voor werkgevers om hun werknemers te beheren en werkroosters te maken en met hen te delen. In de app kunnen wekelijkse roosters worden gemaakt, die beschikbaar zijn voor werknemers om automatisch te importeren in hun agenda's."
+      },
+      "techStack": {
+        "JavaScript Runtime": "Node.js",
+        "Frontend Framework": "Vue.js",
+        "Authenticatie": "Firebase",
+        "Database": "Cloud Firestore"
       }
     }
   ],
