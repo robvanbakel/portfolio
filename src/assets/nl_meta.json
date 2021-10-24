@@ -30,27 +30,6 @@
       }
     },
     {
-      "name": "Scheduler",
-      "images": {
-        "showcase": "show_scheduler.png",
-        "hero": "scheduler_hero.jpg"
-      },
-      "links": {
-        "GitHub": "https://github.com/robvanbakel/scheduler-slack-bot",
-        "live": "https://avsr.nl"
-      },
-      "text": {
-        "lead": "Laat werknemers hun werkrooster in hun agenda zetten. Snel en pijnloos.",
-        "intro": "Bij een vorige werkgever werd ons rooster per week gemaakt. Dit werkrooster werd naar ons gestuurd in een Slack bericht van de werkgever. Dit systeem werkte, maar omdat de werktijden van dag tot dag erg konden variëren, ontstonden er snel fouten wanneer je je werkrooster in je agenda wilde zetten. Om het leven van mijn collega's en mezelf iets makkelijk te maken, wilde ik dit probleem oplossen."
-      },
-      "techStack": {
-        "JavaScript Runtime": "Node.js",
-        "Gebruikte API": "Slack API",
-        "Web Framework": "Express",
-        "Frontend Framework": "Vue.js"
-      }
-    },
-    {
       "name": "Spark",
       "images": {
         "showcase": "show_spark.png",
@@ -70,7 +49,28 @@
         "Authenticatie": "Firebase",
         "Database": "Cloud Firestore"
       }
-    }
+    },
+    {
+      "name": "Scheduler",
+      "images": {
+        "showcase": "show_scheduler.png",
+        "hero": "scheduler_hero.jpg"
+      },
+      "links": {
+        "GitHub": "https://github.com/robvanbakel/scheduler-slack-bot",
+        "live": "https://avsr.nl"
+      },
+      "text": {
+        "lead": "Laat werknemers hun werkrooster in hun agenda zetten. Snel en pijnloos.",
+        "intro": "Bij een vorige werkgever werd ons rooster per week gemaakt. Dit werkrooster werd naar ons gestuurd in een Slack bericht van de werkgever. Dit systeem werkte, maar omdat de werktijden van dag tot dag erg konden variëren, ontstonden er snel fouten wanneer je je werkrooster in je agenda wilde zetten. Om het leven van mijn collega's en mezelf iets makkelijk te maken, wilde ik dit probleem oplossen."
+      },
+      "techStack": {
+        "JavaScript Runtime": "Node.js",
+        "Gebruikte API": "Slack API",
+        "Web Framework": "Express",
+        "Frontend Framework": "Vue.js"
+      }
+    }   
   ],
   "footer": {
     "title": "Neem contact op",

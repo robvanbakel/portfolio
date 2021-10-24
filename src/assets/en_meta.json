@@ -30,27 +30,6 @@
       }
     },
     {
-      "name": "Scheduler",
-      "images": {
-        "showcase": "show_scheduler.png",
-        "hero": "scheduler_hero.jpg"
-      },
-      "links": {
-        "GitHub": "https://github.com/robvanbakel/scheduler-slack-bot",
-        "live": "https://avsr.nl"
-      },
-      "text": {
-        "lead": "Put your work schedule in your calendar. Quick and hassle-free.",
-        "intro": "At a former employer, our work schedule was created per week. Every employee got their weekly schedule sent by them via a Slack message by the Planning department. This system worked, but was prone to user error as shift time could vary greatly from day to day without any option to automatically import your work schedule into your phone's calendar. To simplify the lives of my colleagues and myself, I set out to solve this problem."
-      },
-      "techStack": {
-        "JavaScript Runtime": "Node.js",
-        "Used API": "Slack API",
-        "Web Framework": "Express",
-        "Frontend Framework": "Vue.js"
-      }
-    },
-    {
       "name": "Spark",
       "images": {
         "showcase": "show_spark.png",
@@ -69,6 +48,27 @@
         "Frontend Framework": "Vue.js",
         "Authentication": "Firebase",
         "Database": "Cloud Firestore"
+      }
+    },
+    {
+      "name": "Scheduler",
+      "images": {
+        "showcase": "show_scheduler.png",
+        "hero": "scheduler_hero.jpg"
+      },
+      "links": {
+        "GitHub": "https://github.com/robvanbakel/scheduler-slack-bot",
+        "live": "https://avsr.nl"
+      },
+      "text": {
+        "lead": "Put your work schedule in your calendar. Quick and hassle-free.",
+        "intro": "At a former employer, our work schedule was created per week. Every employee got their weekly schedule sent by them via a Slack message by the Planning department. This system worked, but was prone to user error as shift time could vary greatly from day to day without any option to automatically import your work schedule into your phone's calendar. To simplify the lives of my colleagues and myself, I set out to solve this problem."
+      },
+      "techStack": {
+        "JavaScript Runtime": "Node.js",
+        "Used API": "Slack API",
+        "Web Framework": "Express",
+        "Frontend Framework": "Vue.js"
       }
     }
   ],
