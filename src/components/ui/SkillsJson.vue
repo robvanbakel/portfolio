@@ -11,7 +11,6 @@
       <div class="tab3">
         <span class="item">"HTML"</span>,<br />
         <span class="item">"(S)CSS"</span>,<br />
-        <span class="item">"WordPress"</span>,<br />
         <span class="item">"JavaScript"</span>,<br />
         <span class="item">"Node.js"</span>,<br />
         <span class="item">"Vue.js"</span>
