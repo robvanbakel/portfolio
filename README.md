@@ -20,4 +20,5 @@ The Vue project is set up to check what the TLD of the domain is. Depending on t
 ## Portfolio Projects
 
 - [robvanbakel.com/gotiny](https://robvanbakel.com/gotiny)
+- [robvanbakel.com/spark](https://robvanbakel.com/spark)
 - [robvanbakel.com/scheduler](https://robvanbakel.com/scheduler)
