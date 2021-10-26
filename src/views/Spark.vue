@@ -114,6 +114,40 @@
       </div>
     </div>
   </section>
+
+  <section id="spark-admin-code" ref="sparkAdminCode">
+    <div class="container">
+      <div class="text-wrapper" v-if="lang === 'nl'">
+        <h3>Spark Admin</h3>
+        <p>
+          De Spark Admin is verantwoordelijk voor de functies van Spark die niet uitgevoerd kunnen worden door de app
+          aan de voorkant. Voorbeelden van dit soort functies zijn het aanmaken van nieuwe gebruikers, het herstellen
+          van wachtwoorden en het serveren van de agenda feed naar individuele gebruikers.
+        </p>
+        <p>
+          Vanuit de app worden verschillende endpoints aangesproken, die daarna de opgevraagde informatie doorgeven aan
+          de frontend. Door de database via de Spark Admin te benaderen heeft de werkgever volledige controle over welke
+          informatie met welke werknemer gedeeld wordt en kan de data zo nodig geherstructureerd worden.
+        </p>
+        <a class="project-link" target="_blank" href="https://github.com/robvanbakel/spark-admin">bekijk op GitHub</a>
+      </div>
+      <div class="text-wrapper" v-else>
+        <h3>Spark Admin</h3>
+        <p>
+          The Spark Admin is responsible for the higher-level functions of Spark, that cannot or should not be executed
+          by the app on the frontend. Creating new users, resetting passwords and serving calendar feeds to individual
+          employees are some of those functions.
+        </p>
+        <p>
+          From within the app, several endpoints are being called, which then provide the requested information to the
+          frontend. Accessing the database via Spark Admin gives the employer full control over what information is
+          being sent to the user, being able to reformat data on the way.
+        </p>
+        <a class="project-link" target="_blank" href="https://github.com/robvanbakel/spark-admin">view on GitHub</a>
+      </div>
+    </div>
+  </section>
+
   <Footer />
 </template>
 
@@ -134,6 +168,14 @@ export default {
     project() {
       return this.$store.getters["meta"].projects.find((project) => project.name === this.$route.name)
     },
+  },
+  mounted() {
+    const sparkAdminCode = this.$refs.sparkAdminCode
+
+    window.addEventListener("scroll", () => {
+      const sectionTop = window.innerHeight - sparkAdminCode.getBoundingClientRect().top
+      sparkAdminCode.style.backgroundPositionY = `calc(50% - ${sectionTop / 2}px)`
+    })
   },
 }
 </script>
