@@ -623,6 +623,7 @@ section#spark-admin-code .text-wrapper {
 @media (max-width: 840px) {
   section#spark-admin-code .text-wrapper {
     width: 100%;
+    padding: 90px 0;
   }
 }
 section#spark-admin-code .text-wrapper h3 {
