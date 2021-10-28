@@ -29,6 +29,8 @@ $breakpoint: 840px;
     grid-template-columns: minmax($col-width, auto) $col-width;
   } @else if ($grid == "1-1") {
     grid-template-columns: repeat(2, 1fr);
+  } @else if ($grid == "1-1-1") {
+    grid-template-columns: repeat(3, 1fr);
   }
   gap: gap(4);
   @media (max-width: $breakpoint) {
@@ -569,7 +571,7 @@ section#hero {
 }
 
 section#features {
-  padding: gap(12) 0;
+  padding: gap(8) 0;
   @media (max-width: $breakpoint) {
     padding: gap(4) 0;
   }
@@ -643,6 +645,39 @@ section#spark-admin-code {
     a.project-link {
       display: block;
       margin-top: 36px;
+    }
+  }
+}
+
+section#features-small {
+  padding-bottom: gap(10);
+  @media (max-width: $breakpoint) {
+    padding-bottom: gap(4);
+  }
+  .container {
+    @include grid("1-1-1");
+    .feature {
+      @media (max-width: $breakpoint) {
+        padding-bottom: gap(2);
+      }
+      h3 {
+        margin-bottom: 12px;
+      }
+      .feature-image-wrapper {
+        box-shadow: $shadow;
+        overflow: hidden;
+        margin-bottom: 18px;
+        border-radius: 10px;
+        height: 180px;
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+      p {
+        font-size: 15px;
+      }
     }
   }
 }
