@@ -11,9 +11,9 @@
   <section id="features">
     <div class="container">
       <feature img="scheduler_feature_doel.jpg">
-        <template v-slot:title v-if="lang === 'nl'">Het doel</template>
-        <template v-slot:title v-else>The Goal</template>
-        <template v-slot:body v-if="lang === 'nl'">
+        <template #title v-if="lang === 'nl'">Het doel</template>
+        <template #title v-else>The Goal</template>
+        <template #body v-if="lang === 'nl'">
           <p>
             Het doel was eenvoudig: Werknemers moeten zo snel en pijnloos mogelijk het werkrooster van Slack in hun
             kalender moeten kunnen krijgen, waarbij geen handwerk of overtypen te pas komt. Hoe minder interactie, hoe
@@ -25,7 +25,7 @@
             ging ik aan de slag.
           </p>
         </template>
-        <template v-slot:body v-else>
+        <template #body v-else>
           <p>
             The goal was simple: Employers would have be able to easily and quickly put their work schedule from Slack
             into their own calendars, without having to manually type anything. The less user interaction, the better.
@@ -39,9 +39,9 @@
       </feature>
 
       <feature img="scheduler_feature_eersteversie.jpg">
-        <template v-slot:title v-if="lang === 'nl'">Eerste versie</template>
-        <template v-slot:title v-else>First version</template>
-        <template v-slot:body v-if="lang === 'nl'">
+        <template #title v-if="lang === 'nl'">Eerste versie</template>
+        <template #title v-else>First version</template>
+        <template #body v-if="lang === 'nl'">
           <p>
             Mijn eerste idee was om gebruikers het bericht te laten kopiëren en plakken op een webpagina, vanuit waar de
             tekst de nodige Regex-Magie&trade; zou ondergaan en omgezet zou worden naar een downloadbaar bestand. Dit
@@ -53,7 +53,7 @@
             en importeren' voorkwamen, bij voorbaat al afgeschreven. Tijd voor versie 2.
           </p>
         </template>
-        <template v-slot:body v-else>
+        <template #body v-else>
           <p>
             My first idea was to let users copy the message's body text and paste it onto a web page, from where the
             text would be undergoing some RegEx&#8209;magic&trade; and be parsed into an
@@ -69,8 +69,8 @@
       </feature>
 
       <feature img="scheduler_feature_slackbot.jpg">
-        <template v-slot:title>Slack Bot</template>
-        <template v-slot:body v-if="lang === 'nl'">
+        <template #title>Slack Bot</template>
+        <template #body v-if="lang === 'nl'">
           <p>
             Om gebruikers zo snel mogelijk hun werkrooster in hun agenda te laten zetten, moest dat vanuit Slack kunnen.
             Ik ging aan de slag met de Slack API en de Scheduler bot was geboren.
@@ -82,7 +82,7 @@
           </p>
           <p>Uiteindelijke score: 3 tikken.</p>
         </template>
-        <template v-slot:body v-else>
+        <template #body v-else>
           <p>
             To enable users to put their schedules in their calendars as quickly as possible, this had to be done
             without leaving Slack. I got to work with the Slack API and the Scheduler Bot was born.

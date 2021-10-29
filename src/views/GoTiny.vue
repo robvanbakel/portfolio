@@ -12,9 +12,9 @@
     <div class="container">
      
       <feature img="gotiny_feature_snelheid.mp4">
-        <template v-slot:title v-if="lang === 'nl'">Gemaakt voor snelheid</template>
-        <template v-slot:title v-else>Made for speed</template>
-        <template v-slot:body v-if="lang === 'nl'">
+        <template #title v-if="lang === 'nl'">Gemaakt voor snelheid</template>
+        <template #title v-else>Made for speed</template>
+        <template #body v-if="lang === 'nl'">
            <p>
             Het verkrijgen van een korte link moet zo snel en pijnloos mogelijk zijn. Bij het maken van zowel de website
             als de API waar GoTiny op draait, is bij iedere stap gedacht aan het optimaliseren van de snelheid voor de
@@ -26,7 +26,7 @@
             wordt wat de korte link is.
           </p>
         </template>
-        <template v-slot:body v-else>
+        <template #body v-else>
          <p>
             To obtain a short link has to be quick and painless. While creating both the website and the API that GoTiny
             runs on, I thought about how to optimize speed and reduce hassle, every step of the way.
@@ -40,9 +40,9 @@
       </feature>
 
       <feature img="gotiny_feature_leesbaarheid.jpg">
-        <template v-slot:title v-if="lang === 'nl'">Is dat een O of een 0?</template>
-        <template v-slot:title v-else>Is that an O or 0?</template>
-        <template v-slot:body v-if="lang === 'nl'">
+        <template #title v-if="lang === 'nl'">Is dat een O of een 0?</template>
+        <template #title v-else>Is that an O or 0?</template>
+        <template #body v-if="lang === 'nl'">
           <p>
             GoTiny genereert voor iedere link een unieke code die de bezoeker naar de originele website doorstuurt. Bij
             het ontwerp van deze korte links stond één ding centraal: het oplezen en intypen van de link moet zo
@@ -54,7 +54,7 @@
             het jaar 2030 iedere seconde een nieuwe link op te vragen. Tegen die tijd zal ik een karakter toevoegen.
           </p>
         </template>
-        <template v-slot:body v-else>
+        <template #body v-else>
           <p>
             GoTiny generates a short code for every link that takes the user to the original website that was provided.
             During construction of those links, I focused on one thing: sharing them should be as easy as possible.
@@ -69,9 +69,9 @@
       </feature>
 
       <feature img="gotiny_feature_integratie.jpg">
-        <template v-slot:title v-if="lang === 'nl'">Overal te integreren</template>
-        <template v-slot:title v-else>Integrate everywhere</template>
-        <template v-slot:body v-if="lang === 'nl'">
+        <template #title v-if="lang === 'nl'">Overal te integreren</template>
+        <template #title v-else>Integrate everywhere</template>
+        <template #body v-if="lang === 'nl'">
           <p>
             Hoewel de website van GoTiny een snelle manier is om een korte link te maken, ligt het hart van de
             funcionaliteit in de API. De API is beschikbaar voor iedereen, zodat ontwikkelaars met minimale moeite korte
@@ -83,7 +83,7 @@
             worden in een chatbot in slechts een paar regels code.
           </p>
         </template>
-        <template v-slot:body v-else>
+        <template #body v-else>
           <p>
             Despite gotiny.cc being an easy way to create short links, the core of generating tiny links quickly and
             easily is the API behind it. The API is accessible to be used by everyone, enabling developers to create
@@ -102,12 +102,12 @@
   <section id="features-small">
     <div class="container">
       <feature-small img="gotiny_feature_small_errorhandling.jpg">
-        <template v-slot:title>Error handling</template>
-        <template v-slot:body v-if="lang === 'nl'">
+        <template #title>Error handling</template>
+        <template #body v-if="lang === 'nl'">
           De GoTiny website heeft gedetailleerde error handling voor wanneer een korte link wordt bezocht die niet
           bestaat. Zo kan de gebruiker zien welk karakter verkeerd getypt is of dat mogelijk er een letter mist.
         </template>
-        <template v-slot:body v-else>
+        <template #body v-else>
           The GoTiny website offers detailed error handling for when a tiny link can't be resolved. When trying to
           resolve a link that contains a restricted character, the user will be indicated of what character was likely
           mistyped.
@@ -115,26 +115,26 @@
       </feature-small>
 
       <feature-small img="gotiny_feature_small_localhistory.jpg">
-        <template v-slot:title v-if="lang === 'nl'">Lokale geschiedenis</template>
-        <template v-slot:title v-else>Local history</template>
-        <template v-slot:body v-if="lang === 'nl'">
+        <template #title v-if="lang === 'nl'">Lokale geschiedenis</template>
+        <template #title v-else>Local history</template>
+        <template #body v-if="lang === 'nl'">
           Hoewel GoTiny geen gebuikersdata opslaat in zijn database of op de server, wordt er een lokale kopie bewaard
           in de browser om het makkelijk te maken een eerder kortgemaakte link terug te vinden.
         </template>
-        <template v-slot:body v-else>
+        <template #body v-else>
           Although GoTiny does not store any user information in its database or on its server, a local copy is being
           kept in the user's browser to make it easy to go go back and reshare a previously shortened link.
         </template>
       </feature-small>
 
       <feature-small img="gotiny_feature_small_javascriptsdk.jpg">
-        <template v-slot:title>JavaScript SDK</template>
-        <template v-slot:body v-if="lang === 'nl'">
+        <template #title>JavaScript SDK</template>
+        <template #body v-if="lang === 'nl'">
           Om het voor ontwikkelaars nog makkelijker te maken GoTiny te integreren heb ik een een JavaScript SDK gemaakt,
           die betere error handling en uitgebreidere response objects biedt. De SDK is
           <a href="https://www.npmjs.com/package/gotiny" target="_blank">beschikbaar op NPM</a>.
         </template>
-        <template v-slot:body v-else>
+        <template #body v-else>
           The GoTiny API is easy to use, but for an even better experience for developers, I created a JavaScript SDK,
           providing extra features like improved error-handling and extended return objects. The SDK is
           <a href="https://www.npmjs.com/package/gotiny" target="_blank">available on NPM</a>.

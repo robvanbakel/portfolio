@@ -16,9 +16,9 @@
   <section id="features">
     <div class="container">
       <feature img="spark_feature_customcomponents.jpg">
-        <template v-slot:title v-if="lang === 'nl'">Custom componenten</template>
-        <template v-slot:title v-else>Custom components</template>
-        <template v-slot:body v-if="lang === 'nl'">
+        <template #title v-if="lang === 'nl'">Custom componenten</template>
+        <template #title v-else>Custom components</template>
+        <template #body v-if="lang === 'nl'">
           <p>
             Omdat ik met Spark de ervaring wilde wekken dat de gebruiker een native app gebruikt in plaats van een
             website, heb ik custom componenten gemaakt voor alle modals, datumpikkers, keuzemenu's etc. Deze componenten
@@ -30,7 +30,7 @@
             meer hoefde aan te passen voor elk gebruik.
           </p>
         </template>
-        <template v-slot:body v-else>
+        <template #body v-else>
           <p>
             Because I want Spark to feel like an app rather than a website, I created custom components for all modals,
             date pickers, dropdown menus, toggles and so on. Components like these make the user forget they're working
@@ -45,9 +45,9 @@
       </feature>
 
       <feature img="spark_feature_searchandfilter.mp4">
-        <template v-slot:title v-if="lang === 'nl'">Zoeken en filteren</template>
-        <template v-slot:title v-else>Search and filter</template>
-        <template v-slot:body v-if="lang === 'nl'">
+        <template #title v-if="lang === 'nl'">Zoeken en filteren</template>
+        <template #title v-else>Search and filter</template>
+        <template #body v-if="lang === 'nl'">
           <p>
             Het bijhouden van een werknemerslijst die bestaat uit slechts een paar mensen is eenvoudig, maar het
             doorzoeken van een eindeloze lijst aan personeel is niet te doen. Ook wilde ik een snelle manier maken om
@@ -59,7 +59,7 @@
             seconden gevonden kan worden.
           </p>
         </template>
-        <template v-slot:body v-else>
+        <template #body v-else>
           <p>
             I built Spark with scalability in mind. Managing a list of just a few employees is easy, but searching an
             employee in a long list would be a nightmare. Also, I wanted to provide a way to quickly display all
@@ -75,9 +75,9 @@
       </feature>
 
       <feature img="spark_feature_calendarsubscriptions.jpg">
-        <template v-slot:title v-if="lang === 'nl'">Agenda synchroniseren</template>
-        <template v-slot:title v-else>Calendar subscriptions</template>
-        <template v-slot:body v-if="lang === 'nl'">
+        <template #title v-if="lang === 'nl'">Agenda synchroniseren</template>
+        <template #title v-else>Calendar subscriptions</template>
+        <template #body v-if="lang === 'nl'">
           <p>
             Het maken van de planning in Spark gebeurt per week. Wanneer een lege week wordt weergegeven, krijgt de
             werknemer de optie om een nieuwe, lege planning te openen of de planning van een bestaande week te kopiëren
@@ -90,7 +90,7 @@
             aanpassingen van de werkgever.
           </p>
         </template>
-        <template v-slot:body v-else>
+        <template #body v-else>
           <p>
             Creating work schedules in Spark happens on a weekly basis. When navigating to a week that doesn't hold a
             schedule yet, the employer will be presented with an option to start with an empty schedule or copy an
