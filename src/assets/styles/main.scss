@@ -11,7 +11,7 @@ $color-accent: #3680ef;
 
 $shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
 
-$col-width: calc(360px);
+$col-width: 360px;
 
 $breakpoint: 840px;
 
@@ -65,7 +65,7 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1260px;
   padding-left: max(30px, env(safe-area-inset-left));
   padding-right: max(30px, env(safe-area-inset-right));
   margin: 0 auto;
