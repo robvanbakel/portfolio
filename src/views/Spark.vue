@@ -15,12 +15,10 @@
 
   <section id="features">
     <div class="container">
-      <div class="feature">
-        <div class="feature-image-wrapper">
-          <img src="/images/spark_feature_customcomponents.jpg" alt="Custom components" />
-        </div>
-        <div class="feature-text" v-if="lang === 'nl'">
-          <h3>Custom componenten</h3>
+      <feature img="spark_feature_customcomponents.jpg">
+        <template v-slot:title v-if="lang === 'nl'">Custom componenten</template>
+        <template v-slot:title v-else>Custom components</template>
+        <template v-slot:body v-if="lang === 'nl'">
           <p>
             Omdat ik met Spark de ervaring wilde wekken dat de gebruiker een native app gebruikt in plaats van een
             website, heb ik custom componenten gemaakt voor alle modals, datumpikkers, keuzemenu's etc. Deze componenten
@@ -31,28 +29,25 @@
             componenten kunnen behandelen als bouwstenen op verschillende plekken binnen Spark, waarbij ik geen code
             meer hoefde aan te passen voor elk gebruik.
           </p>
-        </div>
-        <div class="feature-text" v-else>
-          <h3>Custom components</h3>
+        </template>
+        <template v-slot:body v-else>
           <p>
             Because I want Spark to feel like an app rather than a website, I created custom components for all modals,
             date pickers, dropdown menus, toggles and so on. Components like these make the user forget they're working
             in a web browser, with the added benefit of being highly customizable.
           </p>
-
           <p>
             All components are built using Vue 3, making use of props and custom events to allow usage in different
             places within Spark. This approach enabled me to use these components like building blocks, without needing
             to change any of the underlying code for each instance.
           </p>
-        </div>
-      </div>
-      <div class="feature">
-        <div class="feature-image-wrapper">
-          <video src="/images/spark_feature_searchandfilter.mp4" autoplay loop muted playsinline></video>
-        </div>
-        <div class="feature-text" v-if="lang === 'nl'">
-          <h3>Zoeken en filteren</h3>
+        </template>
+      </feature>
+
+      <feature img="spark_feature_searchandfilter.mp4">
+        <template v-slot:title v-if="lang === 'nl'">Zoeken en filteren</template>
+        <template v-slot:title v-else>Search and filter</template>
+        <template v-slot:body v-if="lang === 'nl'">
           <p>
             Het bijhouden van een werknemerslijst die bestaat uit slechts een paar mensen is eenvoudig, maar het
             doorzoeken van een eindeloze lijst aan personeel is niet te doen. Ook wilde ik een snelle manier maken om
@@ -63,9 +58,8 @@
             werknemer kan een zoekterm combineren met één of meer filters zodat een elke werknemer binnen een paar
             seconden gevonden kan worden.
           </p>
-        </div>
-        <div class="feature-text" v-else>
-          <h3>Search and Filter</h3>
+        </template>
+        <template v-slot:body v-else>
           <p>
             I built Spark with scalability in mind. Managing a list of just a few employees is easy, but searching an
             employee in a long list would be a nightmare. Also, I wanted to provide a way to quickly display all
@@ -77,14 +71,13 @@
             can even combine a search query with any one -or more- filters, making it effortless to narrow down a long
             list of staff to just one employee in literal seconds.
           </p>
-        </div>
-      </div>
-      <div class="feature">
-        <div class="feature-image-wrapper">
-          <img src="/images/spark_feature_calendarsubscriptions.jpg" alt="Calendar Subscriptions" />
-        </div>
-        <div class="feature-text" v-if="lang === 'nl'">
-          <h3>Agenda synchroniseren</h3>
+        </template>
+      </feature>
+
+      <feature img="spark_feature_calendarsubscriptions.jpg">
+        <template v-slot:title v-if="lang === 'nl'">Agenda synchroniseren</template>
+        <template v-slot:title v-else>Calendar subscriptions</template>
+        <template v-slot:body v-if="lang === 'nl'">
           <p>
             Het maken van de planning in Spark gebeurt per week. Wanneer een lege week wordt weergegeven, krijgt de
             werknemer de optie om een nieuwe, lege planning te openen of de planning van een bestaande week te kopiëren
@@ -96,9 +89,8 @@
             telefoon. Op deze manier wordt de agenda van de werknemer altijd gesynchroniseerd met de laatste
             aanpassingen van de werkgever.
           </p>
-        </div>
-        <div class="feature-text" v-else>
-          <h3>Calendar subscriptions</h3>
+        </template>
+        <template v-slot:body v-else>
           <p>
             Creating work schedules in Spark happens on a weekly basis. When navigating to a week that doesn't hold a
             schedule yet, the employer will be presented with an option to start with an empty schedule or copy an
@@ -110,8 +102,8 @@
             each employee's schedule, which can be easily subscribed to via their computer or phone. This way, any
             changes made by the employer will be immediately visible the employee's own calendar.
           </p>
-        </div>
-      </div>
+        </template>
+      </feature>
     </div>
   </section>
 
@@ -154,10 +146,11 @@
 <script>
 import ProjectHeader from "@/components/layout/ProjectHeader"
 import ProjectIntro from "@/components/layout/ProjectIntro"
+import Feature from "@/components/layout/Feature"
 import Footer from "@/components/layout/Footer"
 
 export default {
-  components: { ProjectHeader, ProjectIntro, Footer },
+  components: { ProjectHeader, ProjectIntro, Feature, Footer },
   computed: {
     lang() {
       return this.$store.getters["lang"]
