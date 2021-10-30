@@ -44,13 +44,13 @@
         <template #body v-if="lang === 'nl'">
           <p>
             Mijn eerste idee was om gebruikers het bericht te laten kopiëren en plakken op een webpagina, vanuit waar de
-            tekst de nodige Regex-Magie&trade; zou ondergaan en omgezet zou worden naar een downloadbaar bestand. Dit
-            bestand konden gebruikers vervolgens importeren in hun agenda.
+            tekst de nodige Regex&#8209;Magie&trade; zou ondergaan en omgezet zou worden naar een
+            <code>.ics</code> bestand. Dit bestand konden gebruikers vervolgens downloaden importeren in hun agenda.
           </p>
           <p>
             Dit werkte, maar ging mijn doel compleet voorbij. Dit was allesbehalve snel en pijnloos. Ik heb ze geteld,
-            het waren 16 kliks. Bovendien was iedere oplossing waarbij in de uitleg de termen '.ics file' of 'downloaden
-            en importeren' voorkwamen, bij voorbaat al afgeschreven. Tijd voor versie 2.
+            het waren 16 kliks. Bovendien was iedere oplossing waarbij in de uitleg de termen '.ics bestand' of
+            'downloaden en importeren' voorkwamen, bij voorbaat al afgeschreven. Tijd voor versie 2.
           </p>
         </template>
         <template #body v-else>
@@ -73,7 +73,7 @@
         <template #body v-if="lang === 'nl'">
           <p>
             Om gebruikers zo snel mogelijk hun werkrooster in hun agenda te laten zetten, moest dat vanuit Slack kunnen.
-            Ik ging aan de slag met de Slack API en de Scheduler bot was geboren.
+            Met behulp van de Slack API heb ik een bot gemaakt die deze taak op zich nam.
           </p>
           <p>
             Vanuit Slack kunnen werknemers de bot aanroepen die direct het bericht leest, de agenda items genereert en
@@ -85,9 +85,8 @@
         <template #body v-else>
           <p>
             To enable users to put their schedules in their calendars as quickly as possible, this had to be done
-            without leaving Slack. I got to work with the Slack API and the Scheduler Bot was born.
+            without leaving Slack. Using the Slack API, I created a bot that would be responsible for this.
           </p>
-
           <p>
             From within Slack, employees can activate the bot, which will then directly read the message, runs the
             parsing logic, generates the calendar items and outputs a preview to the user. With one tap, the user can
