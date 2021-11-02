@@ -5,10 +5,10 @@
   <section class="two-images" id="hero">
     <div class="container">
       <div class="img-wrapper">
-        <img src="/images/spark_employeelist.jpeg" alt="Spark Employee List" />
+        <img src="/images/spark_employeelist.jpg" alt="Spark Employee List" />
       </div>
       <div class="img-wrapper">
-        <img src="/images/spark_planner.png" alt="Spark Planner" />
+        <img src="/images/spark_planner.jpg" alt="Spark Planner" />
       </div>
     </div>
   </section>
