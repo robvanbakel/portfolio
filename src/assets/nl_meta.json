@@ -33,7 +33,7 @@
       "name": "Spark",
       "images": {
         "showcase": "show_spark.png",
-        "hero": "spark_planner.jpg"
+        "hero": "spark_hero.jpg"
       },
       "links": {
         "GitHub": "https://github.com/robvanbakel/spark",
