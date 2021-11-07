@@ -68,7 +68,7 @@
         </template>
       </feature>
 
-      <feature img="gotiny_feature_integratie.jpg">
+      <feature img="gotiny_feature_integration.jpg">
         <template #title v-if="lang === 'nl'">Overal te integreren</template>
         <template #title v-else>Integrate everywhere</template>
         <template #body v-if="lang === 'nl'">
