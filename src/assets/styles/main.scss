@@ -148,7 +148,7 @@ a.project-link {
 }
 
 .mobile {
-  @media (min-width: $breakpoint+1) {
+  @media (min-width: ($breakpoint+1)) {
     display: none !important;
   }
 }
@@ -681,6 +681,14 @@ section#features-small {
     }
   }
 }
+
+/*
+*
+*  ======
+*  FOOTER
+*  ======
+*
+*/
 
 footer {
   padding: gap(8) 0;
