@@ -39,7 +39,7 @@
         </template>
       </feature>
 
-      <feature img="gotiny_feature_leesbaarheid.jpg">
+      <feature img="gotiny_feature_readability.jpg">
         <template #title v-if="lang === 'nl'">Is dat een O of een 0?</template>
         <template #title v-else>Is that an O or 0?</template>
         <template #body v-if="lang === 'nl'">
