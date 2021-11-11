@@ -100,7 +100,7 @@
 
   <section id="features-small">
     <div class="container">
-      <feature-small img="gotiny_feature_small_customcodes.jpg">
+      <feature-small img="gotiny_feature_small_customlinks.jpg">
         <template #title>Custom links</template>
         <template #body v-if="lang === 'nl'">
           De <a href="https://github.com/robvanbakel/gotiny-api" target="_blank">GoTiny API</a> laat gebruikers custom
