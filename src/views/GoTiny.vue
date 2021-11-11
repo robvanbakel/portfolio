@@ -10,12 +10,11 @@
 
   <section id="features">
     <div class="container">
-     
       <feature img="gotiny_feature_snelheid.mp4">
         <template #title v-if="lang === 'nl'">Gemaakt voor snelheid</template>
         <template #title v-else>Made for speed</template>
         <template #body v-if="lang === 'nl'">
-           <p>
+          <p>
             Het verkrijgen van een korte link moet zo snel en pijnloos mogelijk zijn. Bij het maken van zowel de website
             als de API waar GoTiny op draait, is bij iedere stap gedacht aan het optimaliseren van de snelheid voor de
             gebruiker.
@@ -27,7 +26,7 @@
           </p>
         </template>
         <template #body v-else>
-         <p>
+          <p>
             To obtain a short link has to be quick and painless. While creating both the website and the API that GoTiny
             runs on, I thought about how to optimize speed and reduce hassle, every step of the way.
           </p>
@@ -101,16 +100,17 @@
 
   <section id="features-small">
     <div class="container">
-      <feature-small img="gotiny_feature_small_errorhandling.jpg">
-        <template #title>Error handling</template>
+      <feature-small img="gotiny_feature_small_customcodes.jpg">
+        <template #title>Custom links</template>
         <template #body v-if="lang === 'nl'">
-          De GoTiny website heeft gedetailleerde error handling voor wanneer een korte link wordt bezocht die niet
-          bestaat. Zo kan de gebruiker zien welk karakter verkeerd getypt is of dat mogelijk er een letter mist.
+          De <a href="https://github.com/robvanbakel/gotiny-api" target="_blank">GoTiny API</a> laat gebruikers custom
+          links maken. In plaats van een willekeurig gegenereerde code die naar de orginele URL verwijst te gebruiker,
+          kunnen gebuikers een eigen identifier invoeren waarmee de link wordt gemaakt.
         </template>
         <template #body v-else>
-          The GoTiny website offers detailed error handling for when a tiny link can't be resolved. When trying to
-          resolve a link that contains a restricted character, the user will be indicated of what character was likely
-          mistyped.
+          The <a href="https://github.com/robvanbakel/gotiny-api" target="_blank">GoTiny API</a> lets users create their
+          own custom links. Instead of a randomly generated 6-character code to resolve the original URL, users can
+          provide their own identifier that will be used to generate the GoTiny link.
         </template>
       </feature-small>
 
