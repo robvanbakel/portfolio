@@ -604,7 +604,7 @@ section#features .container .feature p:last-child {
 section#spark-admin-code {
   background-color: #1f1f1f;
   margin-bottom: 120px;
-  background-image: url("../../../public/images/spark_feature_admin_code.jpg");
+  background-image: url("../../../public/images/spark_feature_admin_code.svg");
   background-repeat: no-repeat;
   background-position: 100% 50%;
   background-size: 50vw;
