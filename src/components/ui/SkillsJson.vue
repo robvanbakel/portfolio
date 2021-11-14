@@ -7,21 +7,27 @@
     <div id="main" ref="main">
       <div class="tab0">[</div>
       <div class="tab1">{</div>
-      <div class="tab2"><span class="attribute">"skills"</span>: [</div>
-      <div class="tab3">
+      <div class="tab2"><span class="attribute">"skills"</span>: {</div>
+      <div class="tab3"><span class="attribute">"frontend"</span>: [</div>
+      <div class="tab4">
         <span class="item">"HTML"</span>,<br />
         <span class="item">"(S)CSS"</span>,<br />
         <span class="item">"JavaScript"</span>,<br />
-        <span class="item">"Node.js"</span>,<br />
         <span class="item">"Vue.js"</span>
       </div>
-      <div class="tab2">]</div>
-      <div class="tab1">},</div>
-      <div class="tab1">{</div>
+      <div class="tab2">],</div>
+      <div class="tab3"><span class="attribute">"backend"</span>: [</div>
+      <div class="tab4">
+        <span class="item">"Node.js"</span>,<br />
+        <span class="item">"Firebase"</span>,<br />
+        <span class="item">"MongoDB"</span> 
+      </div>
+      <div class="tab3">]</div>
+      <div class="tab2">},</div>
       <div class="tab2"><span class="attribute">"nowLearning"</span>: [</div>
       <div class="tab3">
-        <span class="item">"React"</span>,<br />
-        <span class="item">"TypeScript"</span>
+        <span class="item">"TypeScript"</span>,<br />
+        <span class="item">"React"</span>
       </div>
       <div class="tab2">]</div>
       <div class="tab1">}</div>

@@ -336,6 +336,9 @@ section#about .container .skills #skillsJson #main .tab2 {
 section#about .container .skills #skillsJson #main .tab3 {
   margin-left: 6ch;
 }
+section#about .container .skills #skillsJson #main .tab4 {
+  margin-left: 8ch;
+}
 section#about .container .skills #skillsJson #main .item {
   color: #ce9178;
 }
