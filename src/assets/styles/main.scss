@@ -496,7 +496,12 @@ header.project {
       height: 100%;
       width: 100%;
       position: relative;
-      transition: all 350ms ease-in-out;
+      transition: all 200ms ease-in-out;
+      &.desktop:hover {
+        cursor: pointer;
+        margin-top: -18px;
+        height: calc(100% + 18px);
+      }
       &::after {
         content: "";
         display: block;
@@ -505,6 +510,7 @@ header.project {
         position: absolute;
         bottom: 0;
         background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 100%);
+        pointer-events: none;
       }
       @media (max-width: $breakpoint) {
         margin-top: gap(2);

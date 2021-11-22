@@ -25,7 +25,9 @@
             </li>
           </ul>
           <div class="title-image mobile">
-            <img :src="'/images/' + project.images.showcase" :alt="project.name + ' Screenshot'" />
+            <a :href="project.links.live" target="_blank">
+              <img :src="'/images/' + project.images.showcase" :alt="project.name + ' Screenshot'" />
+            </a>
           </div>
           <p class="lead">
             {{ project.text.lead }}
@@ -41,7 +43,9 @@
           </div>
         </div>
         <div class="title-image desktop">
-          <img :src="'/images/' + project.images.hero" :alt="project.name + ' Screenshot'" />
+          <a :href="project.links.live" target="_blank">
+            <img :src="'/images/' + project.images.hero" :alt="project.name + ' Screenshot'" />
+          </a>
         </div>
       </div>
     </div>
