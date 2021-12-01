@@ -12,7 +12,7 @@
       "name": "GoTiny",
       "images": {
         "showcase": "show_gotiny.png",
-        "hero": "gotiny_hero.png"
+        "hero": "gotiny_hero.jpg"
       },
       "links": {
         "GitHub": "https://github.com/robvanbakel/gotiny-api",
