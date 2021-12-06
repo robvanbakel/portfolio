@@ -62,7 +62,7 @@
       },
       "text": {
         "lead": "Laat werknemers hun werkrooster in hun agenda zetten. Snel en pijnloos.",
-        "intro": "Bij een vorige werkgever werd ons rooster per week gemaakt. Dit werkrooster werd naar ons gestuurd in een Slack bericht van de werkgever. Dit systeem werkte, maar omdat de werktijden van dag tot dag erg konden variëren, ontstonden er snel fouten wanneer je je werkrooster in je agenda wilde zetten. Om het leven van mijn collega's en mezelf iets makkelijk te maken, wilde ik dit probleem oplossen."
+        "intro": "Bij een vorige werkgever kregen we wekelijks ons rooster per Slack bericht. Omdat werktijden van dag tot dag erg konden variëren, ontstonden er snel fouten wanneer je je werkrooster in je agenda wilde zetten. Deze Slack Bot is heb ik gemaakt als oplossing voor dit probleem."
       },
       "techStack": {
         "JavaScript Runtime": "Node.js",
