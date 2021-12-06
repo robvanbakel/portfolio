@@ -28,8 +28,10 @@ const store = createStore({
 
       if (tld === "nl") {
         context.commit("setLang", { lang: "nl", meta: require("@/assets/nl_meta.json") })
+        document.documentElement.lang = "nl"
       } else {
         context.commit("setLang", { lang: "en", meta: require("@/assets/en_meta.json") })
+        document.documentElement.lang = "en"
       }
     },
   },
