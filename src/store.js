@@ -1,4 +1,4 @@
-import { createStore } from "vuex"
+import { createStore } from 'vuex'
 
 const store = createStore({
   state() {
@@ -23,16 +23,16 @@ const store = createStore({
   },
   actions: {
     getLang(context) {
-      
-      const tld = window.location.host.split(".").pop()
+      let lang = window.location.host.split('.').pop()
 
-      if (tld === "nl") {
-        context.commit("setLang", { lang: "nl", meta: require("@/assets/nl_meta.json") })
-        document.documentElement.lang = "nl"
-      } else {
-        context.commit("setLang", { lang: "en", meta: require("@/assets/en_meta.json") })
-        document.documentElement.lang = "en"
+      if (lang !== 'nl') lang = 'en'
+
+      const setLang = (lang) => {
+        context.commit('setLang', { lang, meta: require(`@/assets/${lang}_meta.json`) })
+        document.documentElement.lang = lang
       }
+
+      setLang(lang)
     },
   },
 })
