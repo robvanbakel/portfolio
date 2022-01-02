@@ -4,7 +4,7 @@
 
   <section id="hero">
     <div class="container">
-      <img src="/images/gotiny_hero_expanded.png" alt="GoTiny Screenshot" />
+      <img src="/images/gotiny_hero_expanded.jpg" alt="GoTiny Screenshot" />
     </div>
   </section>
 
