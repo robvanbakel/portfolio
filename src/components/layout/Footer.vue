@@ -31,6 +31,7 @@
               <textarea name="message" id="message" required v-model="message"></textarea>
             </div>
             <div class="button-wrapper">
+              <input type="text" name="empty" id="empty" v-model="empty" :style="{ display: 'none' }" />
               <button type="submit">{{ meta.footer.form.send }}</button>
             </div>
           </form>
@@ -48,6 +49,7 @@ export default {
       name: "",
       email: "",
       message: "",
+      empty: "",
     }
   },
   computed: {
@@ -57,6 +59,8 @@ export default {
   },
   methods: {
     async submitHandler() {
+
+      if(this.empty.length) return
 
       await fetch("/contactform", {
         method: "POST",
