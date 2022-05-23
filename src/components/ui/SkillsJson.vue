@@ -27,7 +27,7 @@
       <div class="tab2"><span class="attribute">"nowLearning"</span>: [</div>
       <div class="tab3">
         <span class="item">"TypeScript"</span>,<br />
-        <span class="item">"React"</span>
+        <span class="item">"Redis"</span>
       </div>
       <div class="tab2">]</div>
       <div class="tab1">}</div>
