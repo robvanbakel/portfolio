@@ -23,8 +23,8 @@
         "intro": "GoTiny provides a no-nonsense way to generate short links. The website enables the user to transform any long url to a short and easily shareable link, with just one click. Speed and ease of use are GoTiny's core values and that's noticeable for both the end user as well as developers."
       },
       "techStack": {
-        "JavaScript Runtime": "Node.js",
-        "Frontend Framework": "Vue.js",
+        "JavaScript Runtime": "Node",
+        "Frontend Framework": "Vue",
         "Web Framework": "Express",
         "Database": "MongoDB"
       }
@@ -44,10 +44,10 @@
         "intro": "Spark aims to make it easy for employers to manage their staff, as well as create and share work schedules with their employees. Weekly schedules can be made in the app, which are then being pushed to a calendar feed that employees can subscribe to."
       },
       "techStack": {
-        "JavaScript Runtime": "Node.js",
-        "Frontend Framework": "Vue.js",
+        "Frontend Framework": "Vue",
         "Authentication": "Firebase",
-        "Database": "Cloud Firestore"
+        "Database": "Cloud Firestore",
+        "Caching": "Redis"
       }
     },
     {
@@ -65,10 +65,10 @@
         "intro": "At a former employer, our weekly work schedule was sent to us in a Slack message. As shift times could vary greatly from day to day, copying these dates into your calendar was prone to user error. To simplify the lives of my colleagues and myself, I set out to solve this problem."
       },
       "techStack": {
-        "JavaScript Runtime": "Node.js",
-        "Used API": "Slack API",
+        "JavaScript Runtime": "Node",
+        "Frontend Framework": "Vue",
         "Web Framework": "Express",
-        "Frontend Framework": "Vue.js"
+        "Used API": "Slack API"
       }
     }
   ],

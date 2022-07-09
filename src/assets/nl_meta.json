@@ -23,8 +23,8 @@
         "intro": "GoTiny is een no-nonsense manier om korte links te maken. De website stelt iedere bezoeker in staat om een lange url met één klik om te toveren in een makkelijk deelbare link. Snelheid en privacy zijn de belangrijkste pijlers van GoTiny en dat is voelbaar vanaf het eerste moment."
       },
       "techStack": {
-        "JavaScript Runtime": "Node.js",
-        "Frontend Framework": "Vue.js",
+        "JavaScript Runtime": "Node",
+        "Frontend Framework": "Vue",
         "Web Framework": "Express",
         "Database": "MongoDB"
       }
@@ -44,10 +44,10 @@
         "intro": "Spark maakt het makkelijk voor werkgevers om hun werknemers te beheren en werkroosters te maken en met hen te delen. In de app kunnen wekelijkse roosters worden gemaakt, die beschikbaar zijn voor werknemers om automatisch te importeren in hun agenda's."
       },
       "techStack": {
-        "JavaScript Runtime": "Node.js",
-        "Frontend Framework": "Vue.js",
+        "Frontend Framework": "Vue",
         "Authenticatie": "Firebase",
-        "Database": "Cloud Firestore"
+        "Database": "Cloud Firestore",
+        "Caching": "Redis"
       }
     },
     {
@@ -65,12 +65,12 @@
         "intro": "Bij een vorige werkgever kregen we wekelijks ons rooster per Slack bericht. Omdat werktijden van dag tot dag erg konden variëren, ontstonden er snel fouten wanneer je je werkrooster in je agenda wilde zetten. Deze Slack Bot is heb ik gemaakt als oplossing voor dit probleem."
       },
       "techStack": {
-        "JavaScript Runtime": "Node.js",
-        "Gebruikte API": "Slack API",
+        "JavaScript Runtime": "Node",
+        "Frontend Framework": "Vue",
         "Web Framework": "Express",
-        "Frontend Framework": "Vue.js"
+        "Gebruikte API": "Slack API"
       }
-    }   
+    }
   ],
   "footer": {
     "title": "Neem contact op",
