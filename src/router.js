@@ -1,68 +1,67 @@
-import { createRouter, createWebHistory } from "vue-router"
+import { createRouter, createWebHistory } from 'vue-router';
 
-import Home from "@/views/Home"
-import GoTiny from "@/views/GoTiny"
-import Scheduler from "@/views/Scheduler"
-import Spark from "@/views/Spark"
+import Home from '@/views/Home.vue';
+import GoTiny from '@/views/GoTiny.vue';
+import Scheduler from '@/views/Scheduler.vue';
+import Spark from '@/views/Spark.vue';
 
 const router = createRouter({
   history: createWebHistory(),
   scrollBehavior(to) {
     if (to.hash) {
-      return { el: to.hash, behavior: "smooth" }
-    } else {
-      return { top: 0 }
+      return { el: to.hash, behavior: 'smooth' };
     }
+    return { top: 0 };
   },
   routes: [
     {
-      path: "/",
+      path: '/',
       component: Home,
-      name: "Home",
+      name: 'Home',
     },
     {
-      path: "/gotiny",
+      path: '/gotiny',
       component: GoTiny,
-      name: "GoTiny",
+      name: 'GoTiny',
       meta: {
-        title: "GoTiny",
+        title: 'GoTiny',
       },
     },
     {
-      path: "/scheduler",
+      path: '/scheduler',
       component: Scheduler,
-      name: "Scheduler",
+      name: 'Scheduler',
       meta: {
-        title: "Scheduler",
+        title: 'Scheduler',
       },
     },
     {
-      path: "/spark",
+      path: '/spark',
       component: Spark,
-      name: "Spark",
+      name: 'Spark',
       meta: {
-        title: "Spark",
+        title: 'Spark',
       },
     },
     {
       path: '/:catchAll(.*)',
       redirect: {
         name: 'Home',
-      } 
-    }
+      },
+    },
   ],
-})
+});
 
 router.beforeEach((to, from, next) => {
-  let title = "Rob van Bakel - Web Development Portfolio"
+  let title = 'Rob van Bakel - Web Development Portfolio';
 
   if (to.meta.title) {
-    title = `${to.meta.title} | ${title}`
+    title = `${to.meta.title} | ${title}`;
   }
 
-  document.title = title
+  document.title = title;
 
-  next()
-})
+  next();
+});
 
-export default router
+export default router;
