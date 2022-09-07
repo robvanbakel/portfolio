@@ -29,6 +29,10 @@
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-router": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
-    "@vue/compiler-sfc": "^3.0.0"
+    "@vue/compiler-sfc": "^3.0.0",
+    "eslint": "^8.23.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-vue": "^9.4.0"
   }
 }
