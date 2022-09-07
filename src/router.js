@@ -44,6 +44,12 @@ const router = createRouter({
         title: "Spark",
       },
     },
+    {
+      path: '/:catchAll(.*)',
+      redirect: {
+        name: 'Home',
+      } 
+    }
   ],
 })
 
