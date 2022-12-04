@@ -21,14 +21,15 @@
       <div class="tab4">
         <span class="item">"Node.js"</span>,<br />
         <span class="item">"Firebase"</span>,<br />
+        <span class="item">"Redis"</span>,<br />
         <span class="item">"MongoDB"</span>
       </div>
       <div class="tab3">]</div>
       <div class="tab2">},</div>
       <div class="tab2"><span class="attribute">"nowLearning"</span>: [</div>
       <div class="tab3">
-        <span class="item">"Redis"</span>,<br />
-        <span class="item">"GraphQL"</span>
+        <span class="item">"GraphQL"</span>,<br />
+        <span class="item">"Nuxt"</span>
       </div>
       <div class="tab2">]</div>
       <div class="tab1">}</div>
