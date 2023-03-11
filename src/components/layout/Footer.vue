@@ -46,26 +46,25 @@ export default {
   data() {
     return {
       showThankYou: false,
-      name: "",
-      email: "",
-      message: "",
-      empty: "",
-    }
+      name: '',
+      email: '',
+      message: '',
+      empty: '',
+    };
   },
   computed: {
     meta() {
-      return this.$store.getters["meta"]
+      return this.$store.getters.meta;
     },
   },
   methods: {
     async submitHandler() {
+      if (this.empty.length) return;
 
-      if(this.empty.length) return
-
-      await fetch("/contactform", {
-        method: "POST",
+      await fetch('/contactform', {
+        method: 'POST',
         headers: {
-          "Content-Type": "application/json",
+          'Content-Type': 'application/json',
         },
         body: JSON.stringify({
           to: this.meta.footer.email,
@@ -73,13 +72,12 @@ export default {
           email: this.email,
           message: this.message,
         }),
-      })
+      });
 
-      this.showThankYou = true
-
+      this.showThankYou = true;
     },
   },
-}
+};
 </script>
 
 <style></style>

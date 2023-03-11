@@ -144,33 +144,35 @@
 </template>
 
 <script>
-import ProjectHeader from "@/components/layout/ProjectHeader"
-import ProjectIntro from "@/components/layout/ProjectIntro"
-import Feature from "@/components/layout/Feature"
-import Footer from "@/components/layout/Footer"
+import ProjectHeader from '@/components/layout/ProjectHeader';
+import ProjectIntro from '@/components/layout/ProjectIntro';
+import Feature from '@/components/layout/Feature';
+import Footer from '@/components/layout/Footer';
 
 export default {
-  components: { ProjectHeader, ProjectIntro, Feature, Footer },
+  components: {
+    ProjectHeader, ProjectIntro, Feature, Footer,
+  },
   computed: {
     lang() {
-      return this.$store.getters["lang"]
+      return this.$store.getters.lang;
     },
     meta() {
-      return this.$store.getters["meta"]
+      return this.$store.getters.meta;
     },
     project() {
-      return this.$store.getters["meta"].projects.find((project) => project.name === this.$route.name)
+      return this.$store.getters.meta.projects.find((project) => project.name === this.$route.name);
     },
   },
   mounted() {
-    const sparkAdminCode = this.$refs.sparkAdminCode
+    const { sparkAdminCode } = this.$refs;
 
-    window.addEventListener("scroll", () => {
-      const sectionTop = window.innerHeight - sparkAdminCode.getBoundingClientRect().top
-      sparkAdminCode.style.backgroundPositionY = `calc(50% - ${sectionTop / 2}px)`
-    })
+    window.addEventListener('scroll', () => {
+      const sectionTop = window.innerHeight - sparkAdminCode.getBoundingClientRect().top;
+      sparkAdminCode.style.backgroundPositionY = `calc(50% - ${sectionTop / 2}px)`;
+    });
   },
-}
+};
 </script>
 
 <style></style>

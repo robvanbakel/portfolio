@@ -5,7 +5,7 @@
 <script>
 export default {
   mounted() {
-    this.$store.dispatch("getLang")
+    this.$store.dispatch('getLang');
   },
-}
+};
 </script>

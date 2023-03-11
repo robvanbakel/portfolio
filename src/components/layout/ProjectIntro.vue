@@ -22,15 +22,15 @@
 export default {
   computed: {
     meta() {
-      return this.$store.getters['meta']
+      return this.$store.getters.meta;
     },
     project() {
-      return this.$store.getters['meta'].projects.find(
-        (project) => project.name === this.$route.name
-      )
+      return this.$store.getters.meta.projects.find(
+        (project) => project.name === this.$route.name,
+      );
     },
   },
-}
+};
 </script>
 
 <style></style>

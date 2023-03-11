@@ -56,22 +56,22 @@
 export default {
   computed: {
     meta() {
-      return this.$store.getters["meta"]
+      return this.$store.getters.meta;
     },
     project() {
-      return this.$store.getters["meta"].projects.find((project) => project.name === this.$route.name)
+      return this.$store.getters.meta.projects.find((project) => project.name === this.$route.name);
     },
   },
   methods: {
     setGitHubActive(e, payload) {
       if (payload) {
-        e.target.classList.add("expanded")
+        e.target.classList.add('expanded');
       } else {
-        e.target.firstChild.classList.remove("expanded")
+        e.target.firstChild.classList.remove('expanded');
       }
     },
   },
-}
+};
 </script>
 
 <style></style>

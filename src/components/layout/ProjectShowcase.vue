@@ -39,22 +39,22 @@
 
 <script>
 export default {
-  props: ["project"],
+  props: ['project'],
   computed: {
     meta() {
-      return this.$store.getters["meta"]
+      return this.$store.getters.meta;
     },
   },
   methods: {
     setGitHubActive(e, payload) {
       if (payload) {
-        e.target.classList.add("expanded")
+        e.target.classList.add('expanded');
       } else {
-        e.target.firstChild.classList.remove("expanded")
+        e.target.firstChild.classList.remove('expanded');
       }
     },
   },
-}
+};
 </script>
 
 <style></style>

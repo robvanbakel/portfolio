@@ -75,19 +75,19 @@
 </template>
 
 <script>
-import SkillsJson from "@/components/ui/SkillsJson"
-import ProjectShowcase from "@/components/layout/ProjectShowcase"
-import Footer from "@/components/layout/Footer"
+import SkillsJson from '@/components/ui/SkillsJson';
+import ProjectShowcase from '@/components/layout/ProjectShowcase';
+import Footer from '@/components/layout/Footer';
 
 export default {
   components: { Footer, SkillsJson, ProjectShowcase },
   computed: {
     lang() {
-      return this.$store.getters["lang"]
+      return this.$store.getters.lang;
     },
     meta() {
-      return this.$store.getters["meta"]
+      return this.$store.getters.meta;
     },
   },
-}
+};
 </script>

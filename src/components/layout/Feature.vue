@@ -23,10 +23,10 @@ export default {
   },
   computed: {
     imgType() {
-      return this.img.split('.').pop()
+      return this.img.split('.').pop();
     },
   },
-}
+};
 </script>
 
 <style></style>
