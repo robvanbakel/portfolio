@@ -4,7 +4,7 @@ Personal portfolio to showcase web development projects.
 
 #### Built With
 
-- [Vue.js](https://v3.vuejs.org)
+- [Vue.js](https://vuejs.org)
 - [Sass](https://sass-lang.com)
 
 ## Portfolio projects
