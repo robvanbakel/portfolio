@@ -61,7 +61,7 @@ export default {
     async submitHandler() {
       if (this.empty.length) return;
 
-      await fetch('/contactform', {
+      await fetch('https://formspree.io/f/xzbnvvnp', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
