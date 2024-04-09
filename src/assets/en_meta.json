@@ -24,8 +24,8 @@
       },
       "techStack": {
         "JavaScript Runtime": "Node",
-        "Frontend Framework": "Vue",
-        "Web Framework": "Express",
+        "Frontend Framework": "Nuxt",
+        "Web Framework": "Nitro",
         "Database": "MongoDB"
       }
     },
@@ -66,7 +66,7 @@
       },
       "techStack": {
         "Frontend Framework": "Nuxt",
-        "Web Framework": "h3",
+        "Web Framework": "Nitro",
         "Database": "Redis",
         "Third Party API": "Slack API"
       }
