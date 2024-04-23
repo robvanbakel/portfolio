@@ -20,7 +20,7 @@
       <div class="tab3"><span class="attribute">"backend"</span>: [</div>
       <div class="tab4">
         <span class="item">"Node.js"</span>,<br />
-        <span class="item">"Firebase"</span>,<br />
+        <span class="item">"PostgreSQL"</span>,<br />
         <span class="item">"Redis"</span>,<br />
         <span class="item">"MongoDB"</span>
       </div>
@@ -28,7 +28,7 @@
       <div class="tab2">},</div>
       <div class="tab2"><span class="attribute">"nowLearning"</span>: [</div>
       <div class="tab3">
-        <span class="item">"Nuxt"</span>
+        <span class="item">"React"</span>
       </div>
       <div class="tab2">]</div>
       <div class="tab1">}</div>
