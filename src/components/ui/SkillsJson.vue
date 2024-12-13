@@ -14,7 +14,8 @@
         <span class="item">"(S)CSS"</span>,<br />
         <span class="item">"JavaScript"</span>,<br />
         <span class="item">"TypeScript"</span>,<br />
-        <span class="item">"Vue.js"</span>
+        <span class="item">"Vue.js/Nuxt"</span>,<br />
+        <span class="item">"React/Next.js"</span>
       </div>
       <div class="tab2">],</div>
       <div class="tab3"><span class="attribute">"backend"</span>: [</div>
@@ -25,12 +26,7 @@
         <span class="item">"MongoDB"</span>
       </div>
       <div class="tab3">]</div>
-      <div class="tab2">},</div>
-      <div class="tab2"><span class="attribute">"nowLearning"</span>: [</div>
-      <div class="tab3">
-        <span class="item">"React"</span>
-      </div>
-      <div class="tab2">]</div>
+      <div class="tab2">}</div>
       <div class="tab1">}</div>
       <div class="tab0">]</div>
     </div>
