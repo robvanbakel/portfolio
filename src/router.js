@@ -4,6 +4,7 @@ import Home from '@/views/Home.vue';
 import GoTiny from '@/views/GoTiny.vue';
 import Scheduler from '@/views/Scheduler.vue';
 import Spark from '@/views/Spark.vue';
+import AllLinks from '@/views/AllLinks.vue';
 
 const router = createRouter({
   history: createWebHistory(),
@@ -41,6 +42,14 @@ const router = createRouter({
       name: 'Spark',
       meta: {
         title: 'Spark',
+      },
+    },
+    {
+      path: '/alllinks',
+      component: AllLinks,
+      name: 'AllLinks',
+      meta: {
+        title: 'AllLinks',
       },
     },
     {

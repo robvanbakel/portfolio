@@ -1,0 +1,4 @@
+{
+  "spellright.language": ["nl"],
+  "spellright.documentTypes": ["markdown", "latex", "plaintext", "vue"]
+}

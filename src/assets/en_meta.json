@@ -51,6 +51,27 @@
       }
     },
     {
+      "name": "AllLinks",
+      "images": {
+        "showcase": "show_alllinks.png",
+        "hero": "alllinks_landing_hero.jpg"
+      },
+      "links": {
+        "GitHub": "https://github.com/robvanbakel/alllinks",
+        "live": "https://alllinks.app"
+      },
+      "text": {
+        "lead": "Collect links to all your channels in your own custom page.",
+        "intro": "AllLinks lets users create their own page to display links to all their (social) channels, pages and websites across the internet. Users can customize their profile to create one link that can easily be shared anywhere."
+      },
+      "techStack": {
+        "Frontend Framework": "React",
+        "Web Framework": "Next.js",
+        "Database": "PostgreSQL",
+        "CSS Framework": "Tailwind CSS"
+      }
+    },
+    {
       "name": "Scheduler",
       "images": {
         "showcase": "show_scheduler.png",

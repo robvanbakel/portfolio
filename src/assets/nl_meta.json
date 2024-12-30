@@ -51,6 +51,27 @@
       }
     },
     {
+      "name": "AllLinks",
+      "images": {
+        "showcase": "show_alllinks.png",
+        "hero": "alllinks_landing_hero.jpg"
+      },
+      "links": {
+        "GitHub": "https://github.com/robvanbakel/alllinks",
+        "live": "https://alllinks.app"
+      },
+      "text": {
+        "lead": "Verzamel links naar al je kanalen op je eigen pagina.",
+        "intro": "Met AllLinks kunnen gebruikers een eigen pagina maken om links naar al hun (sociale) kanalen, pagina's en websites te presenteren. Gebruikers kunnen hun profiel customizen en zo één link te maken die eenvoudig overal gedeeld kan worden."
+      },
+      "techStack": {
+        "Frontend Framework": "React",
+        "Web Framework": "Next.js",
+        "Database": "PostgreSQL",
+        "CSS Framework": "Tailwind CSS"
+      }
+    },
+    {
       "name": "Scheduler",
       "images": {
         "showcase": "show_scheduler.png",
