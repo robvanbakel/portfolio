@@ -21,14 +21,6 @@ const router = createRouter({
       name: 'Home',
     },
     {
-      path: '/gotiny',
-      component: GoTiny,
-      name: 'GoTiny',
-      meta: {
-        title: 'GoTiny',
-      },
-    },
-    {
       path: '/scheduler',
       component: Scheduler,
       name: 'Scheduler',

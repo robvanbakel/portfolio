@@ -9,27 +9,6 @@
   },
   "projects": [
     {
-      "name": "GoTiny",
-      "images": {
-        "showcase": "show_gotiny.png",
-        "hero": "gotiny_hero.jpg"
-      },
-      "links": {
-        "GitHub": "https://github.com/robvanbakel/gotiny-api",
-        "live": "https://gotiny.cc"
-      },
-      "text": {
-        "lead": "The easiest way to generate short links. Quick, safe en accessible.",
-        "intro": "GoTiny provides a no-nonsense way to generate short links. The website enables the user to transform any long url to a short and easily shareable link, with just one click. Speed and ease of use are GoTiny's core values and that's noticeable for both the end user as well as developers."
-      },
-      "techStack": {
-        "JavaScript Runtime": "Node",
-        "Frontend Framework": "Nuxt",
-        "Web Framework": "Nitro",
-        "Database": "MongoDB"
-      }
-    },
-    {
       "name": "Spark",
       "images": {
         "showcase": "show_spark.png",
