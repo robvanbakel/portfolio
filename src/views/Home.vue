@@ -44,7 +44,7 @@
 
         <p>
           I've always been interested in data structures and the organization thereof, so I wanted to find ways to combine that with my enthusiasm for web
-          development. I started to explore what happens behind the scenes of websites that I visited. I dived deeper into JavaScript, taught myself Node.js and
+          development. I started to explore what happens behind the scenes of websites that I visited. I dove deeper into JavaScript, taught myself Node.js and
           how to handle servers and databases.
         </p>
 
